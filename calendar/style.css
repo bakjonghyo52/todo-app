@@ -18,6 +18,8 @@ body {
 }
 
 /* calculator System */
+/* 디스플레이 반응형 단위가 뭐가 되면 좋을까 
+화면 최소치를 설정하는 방법을 찾아보는게 좋을 거 같음 */
 .calculator{
   display: flex;
   flex-direction: column;
@@ -92,12 +94,13 @@ body {
   flex-grow: 1;
 }
 
+
+/* 호버 옵션이랑 색상이 위에 덮혀 입허지는거 같음 */
 button {
   all: unset; 
-  background-color: #3E7BFA;;
-  color: #FFFFFF;;
+  background: linear-gradient(258.63deg, #E3E7FF 4.53%, rgba(205, 212, 255, 0) 63.41%, rgba(206, 212, 250, 0) 98.17%);  color: #0051ff;
+  border-radius: 4px;  
   padding: 5px 20px;
-  border-radius: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -108,7 +111,6 @@ button {
   flex-grow: 1;
 }
 /* 2번째 row의 +버튼만 더  큰 이유를 모르겠음 */
-/* 버튼의 자식요소에도 전부 호버가 적용이 안됨 */
 button:hover {
   background-color: #4f86fe;
   color: #FFFFFF;
@@ -126,13 +128,14 @@ button.medium{
   flex-grow: 2;
 }
 
-button.small.operator {
+/* 버튼의 자식요소에 호버 적용 완료 클래스가 and로 설정되어서안된듯*/
+/* button.small.operator */
+.operator {
   background-color: black;
   color: aliceblue;
 }
 
-
-button.small.control {
+.control {
   background-color: rgb(255, 255, 255);
   color: black;
 }
