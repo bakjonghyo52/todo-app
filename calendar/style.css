@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #E5E5E5;
+  width: 100%;
+  height: 100vh;
+
+}
+
+/* calculator System */
+.calculator{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  background: #FCFCFC;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  height: 50vh;
+  width: 50vh;
+  border-radius: 5px;
+  gap:5vh;
+}
+
+/* 자식선택자 적용하는 걸 사용 할떈 왜 안되는건지 잘 모르겠음 */
+/* 
+.calculator:nth-child(1) {
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.calculator:nth-child(2) {
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 3;
+} */
+
+.calculator_display {
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF1FD;
+  border-radius: 20px;
+  font-size: 2rem;
+  align-items: flex-end;
+  padding: 2vh;
+  margin: 2vh;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.calculator > border {
+  border-top: #000 1px solid;
+  flex: none;
+  order: 2;
+}
+
+.calculator_button_layer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #EDF1FD;
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 3;
+}
+
+.button_layer_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button_layer_row:nth-child(n) {
+  flex: none;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+button {
+  all: unset; 
+  background-color: #3E7BFA;;
+  color: #FFFFFF;;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.5rem; 
+
+  flex-grow: 1;
+}
+/* 2번째 row의 +버튼만 더  큰 이유를 모르겠음 */
+/* 버튼의 자식요소에도 전부 호버가 적용이 안됨 */
+button:hover {
+  background-color: #4f86fe;
+  color: #FFFFFF;
+}
+
+button:active {
+  background-color: #0051ff;
+  color: #FFFFFF;
+}
+
+
+button.medium{
+  flex: none;
+  align-self: stretch;
+  flex-grow: 2;
+}
+
+button.small.operator {
+  background-color: black;
+  color: aliceblue;
+}
+
+
+button.small.control {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
