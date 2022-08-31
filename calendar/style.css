@@ -44,6 +44,7 @@ order: 1;
   flex: 0 1 30rem;
   order: 2;
 }
+
 /* ***************** */
 /* display 영역  */
 /* ***************** */
@@ -125,9 +126,9 @@ button:active {
   color: #FFFFFF;
 }
 
-  /* 왜 16rem이 아니고 14rem을 사용 했을 떄 크기가 두배가 되는겅ㅁ?
+/* 왜 16rem이 아니고 14rem을 사용 했을 떄 크기가 두배가 되는겅ㅁ?
     .button의 padding 값에 1rem이 들어가 있어서 그럤음
-  */
+*/
 button.medium{
   flex: 0 0 16rem;
 }
