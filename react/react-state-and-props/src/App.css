@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.entryContainer {
+  border: 1px solid black;
+  height: 100px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
